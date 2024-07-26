@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopkeeper Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+        }
+        .container {
+            margin: 2em auto;
+            max-width: 600px;
+            background: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            margin: 1em;
+            padding: 1em 2em;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopkeeper Application</h1>
+    </header>
+    <div class="container">
+        <p>Welcome to the Shopkeeper Application. Manage your products and inventory with ease.</p>
+        <a href="{{ url_for('view_product') }}" class="btn">View Products</a>
+        <a href="{{ url_for('add_product_post') }}" class="btn">Add Product</a>
+        <a href="#" class="btn">Manage Inventory</a>
+    </div>
+</body>
+</html>
